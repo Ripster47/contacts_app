@@ -6,9 +6,9 @@ class Contact < ApplicationRecord
 
   def full_name
     if first_name == "Smitty" && last_name == "Werbenjagermanjensen"
-      "This contact's name is #{first_name} #{last_name}, and HE WAS NUMBER 1!" 
+      "This contact's name is #{first_name} #{middle_name} #{last_name}, and HE WAS NUMBER 1!" 
     else
-      "This contact's name is #{first_name} #{last_name}." 
+      "This contact's name is #{first_name} #{middle_name} #{last_name}." 
     end
   end
 
