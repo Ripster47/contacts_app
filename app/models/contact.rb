@@ -1,4 +1,13 @@
 class Contact < ApplicationRecord
+  validates :first_name, presence: true
+  validates :last_name, presence: true
+  validates :email, uniqueness: true
+  validates :bio, length: {in: 10..300}
+  
+
+  
+
+
 
   def friendly_updated_at
     updated_at.strftime("%b %d, %Y")
